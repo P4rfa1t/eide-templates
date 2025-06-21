@@ -285,7 +285,7 @@
             "description": ""
         },
          "Board/ST": {
-            "display_name": "ST's Board",
+            "display_name": "ST Board",
             "description": ""
         }
     },
@@ -306,8 +306,8 @@
             "category": [
                 "Board/ST"
             ],
-            "version": "1.1",
-            "author": "github0null"
+            "version": "1.0",
+            "author": "P4rfa1t"
         },
         {
             "file_name": "gd32vw553_gcc.ept",
