@@ -283,6 +283,10 @@
         "Board/Nordic": {
             "display_name": "Nordic BLE Dev Board",
             "description": ""
+        },
+         "Board/ST": {
+            "display_name": "ST's Board",
+            "description": ""
         }
     },
     "template_list": [
@@ -295,6 +299,15 @@
             ],
             "version": "1.0",
             "author": "Ankali-Aylina"
+        },
+        {
+            "file_name": "STM32F407DISCO_DEMO.ept",
+            "display_name": "STM32F4discovery GCC HAL demo ",
+            "category": [
+                "Board/ST"
+            ],
+            "version": "1.1",
+            "author": "github0null"
         },
         {
             "file_name": "gd32vw553_gcc.ept",
