@@ -1,8 +1,8 @@
 {
     "category_map": {
         "MCU": {
-            "display_name": "Bare MCU",
-            "description": "裸机程序模板（Bare MCU Templates）"
+            "display_name": "MCU",
+            "description": "按微控制器型号分类的模板（Templates classified by mcu models）"
         },
         "MCU/AVR": {
             "display_name": "AVR",
@@ -14,7 +14,7 @@
         },
         "MCU/8051": {
             "display_name": "8051",
-            "description": ""
+            "description": "The Universal 8051"
         },
         "MCU/WCH": {
             "display_name": "WCH",
@@ -103,6 +103,10 @@
         "MCU/ST/STM32/STM32F4": {
             "display_name": "STM32F4",
             "description": "F4 Series"
+        },
+        "MCU/ST/STM32/STM32H7": {
+            "display_name": "STM32H7",
+            "description": "H7 Series"
         },
         "MCU/ST/STM32/C++": {
             "display_name": "C++ SDK",
@@ -311,12 +315,21 @@
     },
     "template_list": [
         {
+            "file_name": "MSPM0G3507.ept",
+            "display_name": "MSPM0G3507 QuickStart (arm-none-eabi-gcc)",
+            "category": [
+                "MCU/TI/MSPM0"
+            ],
+            "version": "1.0",
+            "author": "github0null"
+        },
+        {
             "file_name": "MSPM0L1306.ept",
             "display_name": "MSPM0L1306 QuickStart (arm-none-eabi-gcc)",
             "category": [
                 "MCU/TI/MSPM0"
             ],
-            "version": "1.1",
+            "version": "1.2",
             "author": "github0null"
         },
         {
@@ -329,15 +342,15 @@
             "author": "github0null"
         },
         {
-            "file_name": "ucos-iii_demo.ept",
-            "display_name": "UCOS-III Demo For STM32G0xx/STM32F1xx/STM32F4xx (GCC)",
+            "file_name": "stm32_ucos-iii.ept",
+            "display_name": "STM32G0xx/STM32F1xx/STM32F4xx UCOS-III QuickStart (STM32CubeMX, GCC)",
             "category": [
                 "MCU/ST/STM32/STM32G0",
                 "MCU/ST/STM32/STM32F1",
                 "MCU/ST/STM32/STM32F4",
                 "RTOS/uCOS-III"
             ],
-            "version": "1.3",
+            "version": "1.4",
             "author": "github0null"
         },
         {
@@ -398,11 +411,11 @@
         },
         {
             "file_name": "avr_serial_loopback.ept",
-            "display_name": "avr serial demo (avr-gcc, ATmega128)",
+            "display_name": "AVR QuickStart Demo (avr-gcc, ATmega128)",
             "category": [
                 "MCU/AVR/ATmega"
             ],
-            "version": "1.2",
+            "version": "1.3",
             "author": "github0null"
         },
         {
@@ -425,19 +438,21 @@
             "author": "github0null"
         },
         {
-            "file_name": "H750_FatFs_FreeRTOS_demo.eide-template",
+            "file_name": "stm32h750vb_FatFs_FreeRTOS.ept",
             "display_name": "STM32H750VBT6 QSPI_FLASH FreeRTOS FatFs demo (qspi, gcc, FreeRTOS, FatFs)",
             "category": [
+                "MCU/ST/STM32/STM32H7",
                 "Board/WeAct",
                 "RTOS/FreeRTOS"
             ],
-            "version": "1.1",
+            "version": "1.2",
             "author": "github0null"
         },
         {
             "file_name": "WeAct_H750_QSPI.eide-template",
             "display_name": "STM32H750VBT6 QSPI_FLASH FreeRTOS blink demo (qspi, gcc, FreeRTOS)",
             "category": [
+                "MCU/ST/STM32/STM32H7",
                 "Board/WeAct",
                 "RTOS/FreeRTOS"
             ],
@@ -448,6 +463,7 @@
             "file_name": "WeAct_H750_bootloader.eide-template",
             "display_name": "STM32H750VBT6 QSPI_FLASH bootloader (qspi, gcc, bootloader)",
             "category": [
+                "MCU/ST/STM32/STM32H7",
                 "Board/WeAct"
             ],
             "version": "1.2",
@@ -490,12 +506,12 @@
             "author": "github0null"
         },
         {
-            "file_name": "stm32f030xx_cpp_demo.eide-template",
+            "file_name": "stm32f030xx_cpp_demo.ept",
             "display_name": "STM32F030 C++ SDK (gcc toolchain, F030 series)",
             "category": [
                 "MCU/ST/STM32/C++"
             ],
-            "version": "1.2",
+            "version": "1.3",
             "author": "github0null"
         },
         {
@@ -544,12 +560,12 @@
             "author": "github0null"
         },
         {
-            "file_name": "HR8P506_demo.eide-template",
-            "display_name": "HR8P506 Demo (ARMCC, GCC toolchain)",
+            "file_name": "HR8P506_demo.ept",
+            "display_name": "HR8P506 QuickStart Demo (ARMCC, GCC toolchain)",
             "category": [
                 "MCU/ES/M0"
             ],
-            "version": "1.1",
+            "version": "1.2",
             "author": "github0null"
         },
         {
@@ -603,7 +619,7 @@
             "category": [
                 "MCU/HDSC/HC32L"
             ],
-            "version": "1.3",
+            "version": "1.4",
             "author": "github0null"
         },
         {
@@ -612,30 +628,39 @@
             "category": [
                 "MCU/HDSC/HC32L"
             ],
-            "version": "1.1",
-            "author": "CAESIUS-TIM"
+            "version": "1.2",
+            "author": "CAESIUS-TIM,github0null"
         },
         {
-            "file_name": "mcs51_sdcc_dht11_quickstart.eide-template",
-            "display_name": "8051 DHT11 Demo (SDCC Toolchain)",
+            "file_name": "mcs51_dht11_sdcc_quickstart.ept",
+            "display_name": "8051 QuickStart With DHT11 Sensor (SDCC Toolchain)",
             "category": [
                 "MCU/8051"
+            ],
+            "version": "1.5",
+            "author": "github0null"
+        },
+        {
+            "file_name": "89c52_sdcc_demo.ept",
+            "display_name": "8051 QuickStart (SDCC Toolchain)",
+            "category": [
+                "MCU/8051"
+            ],
+            "version": "1.3",
+            "author": "github0null"
+        },
+        {
+            "file_name": "stc15_keilc51.ept",
+            "display_name": "STC15xx QuickStart (KeilC51)",
+            "category": [
+                "MCU/STC/STC15"
             ],
             "version": "1.4",
             "author": "github0null"
         },
         {
-            "file_name": "89c52_sdcc_demo.eide-template",
-            "display_name": "89c52 sdcc demo (SDCC Toolchain)",
-            "category": [
-                "MCU/8051"
-            ],
-            "version": "1.2",
-            "author": "github0null"
-        },
-        {
-            "file_name": "stc15_demo.eide-template",
-            "display_name": "STC15xx Demo (Keil C51 Toolchain)",
+            "file_name": "stc15_sdcc.ept",
+            "display_name": "STC15xx QuickStart (SDCC Toolchain)",
             "category": [
                 "MCU/STC/STC15"
             ],
@@ -643,21 +668,12 @@
             "author": "github0null"
         },
         {
-            "file_name": "stc15f104w_sdcc_demo.eide-template",
-            "display_name": "STC15F104W Demo (SDCC Toolchain)",
-            "category": [
-                "MCU/STC/STC15"
-            ],
-            "version": "1.2",
-            "author": "github0null"
-        },
-        {
-            "file_name": "stc8g_stc8h_sdcc_demo.ept",
-            "display_name": "STC8G/H Demo (SDCC Toolchain)",
+            "file_name": "stc8g_stc8h_sdcc.ept",
+            "display_name": "STC8G/H QuickStart (SDCC Toolchain)",
             "category": [
                 "MCU/STC/STC8"
             ],
-            "version": "1.1",
+            "version": "1.2",
             "author": "yunline"
         },
         {
@@ -671,38 +687,29 @@
         },
         {
             "file_name": "stm8s103f3_quickstart_cosmic.ept",
-            "display_name": "STM8S103F3 Quickstart (COSMIC Compiler) (Blink)",
+            "display_name": "STM8S Quickstart (COSMIC Compiler)",
             "category": [
                 "MCU/ST/STM8/STM8S"
             ],
-            "version": "1.1",
+            "version": "1.2",
             "author": "github0null"
         },
         {
-            "file_name": "stm8s103f3_quickstart.eide-template",
-            "display_name": "STM8S103F3 Quickstart (Blink)",
-            "category": [
-                "MCU/ST/STM8/STM8S"
-            ],
-            "version": "1.3",
-            "author": "github0null"
-        },
-        {
-            "file_name": "stm8s103f3_oled_quickstart.eide-template",
-            "display_name": "STM8S103F3 Quickstart (OLED SSD1306)",
-            "category": [
-                "MCU/ST/STM8/STM8S"
-            ],
-            "version": "1.3",
-            "author": "github0null"
-        },
-        {
-            "file_name": "stm8s103f3_sdcc_quickstart.eide-template",
-            "display_name": "STM8S103F3 Quickstart (SDCC Toolchain)",
+            "file_name": "stm8s103f3_quickstart_iar.ept",
+            "display_name": "STM8S Quickstart (IARSTM8)",
             "category": [
                 "MCU/ST/STM8/STM8S"
             ],
             "version": "1.4",
+            "author": "github0null"
+        },
+        {
+            "file_name": "stm8s103f3_quickstart_sdcc.ept",
+            "display_name": "STM8S103F3 Quickstart (SDCC)",
+            "category": [
+                "MCU/ST/STM8/STM8S"
+            ],
+            "version": "1.5",
             "author": "github0null"
         },
         {
@@ -715,8 +722,17 @@
             "author": "AllenMaa"
         },
         {
-            "file_name": "stm32f1xx_blink_demo.eide-template",
-            "display_name": "STM32F1XX Blink Demo (STM32F10x StdPeriph Lib V3.5.0)",
+            "file_name": "stm32f1xx_blink_demo.ept",
+            "display_name": "STM32F1xx SPL Demo (ARMCC, STM32F10x StdPeriph Lib V3.5.0)",
+            "category": [
+                "MCU/ST/STM32/STM32F1"
+            ],
+            "version": "1.5",
+            "author": "github0null"
+        },
+        {
+            "file_name": "stm32f1xx_cubemx.ept",
+            "display_name": "STM32F1xx CubeMX Demo (STM32CubeMX, GCC)",
             "category": [
                 "MCU/ST/STM32/STM32F1"
             ],
@@ -724,51 +740,12 @@
             "author": "github0null"
         },
         {
-            "file_name": "stm32f1xx_FreeRTOS_quickstart.ept",
-            "display_name": "STM32F1XX Blink Demo (FreeRTOS)",
-            "category": [
-                "MCU/ST/STM32/STM32F1",
-                "RTOS/FreeRTOS"
-            ],
-            "version": "1.4",
-            "author": "github0null"
-        },
-        {
-            "file_name": "stm32f4xx_cubemx_demo.ept",
-            "display_name": "STM32F407 Blink Demo (STM32CubeMX, GCC)",
+            "file_name": "stm32f4xx_cubemx.ept",
+            "display_name": "STM32F407 CubeMX Demo (STM32CubeMX, GCC)",
             "category": [
                 "MCU/ST/STM32/STM32F4"
             ],
-            "version": "1.4",
-            "author": "github0null"
-        },
-        {
-            "file_name": "stm32f407_CubeMX_FreeRTOS+FatFs+USB_device_demo.eide-template",
-            "display_name": "STM32F407VGT6 FreeRTOS + FatFs + USB_device Demo",
-            "category": [
-                "MCU/ST/STM32/STM32F4",
-                "RTOS/FreeRTOS"
-            ],
-            "version": "1.3",
-            "author": "github0null"
-        },
-        {
-            "file_name": "stm32f103c8_cubeMX_demo.ept",
-            "display_name": "STM32F103C8 Demo (STM32CubeMX)",
-            "category": [
-                "MCU/ST/STM32/STM32F1"
-            ],
-            "version": "1.3",
-            "author": "github0null"
-        },
-        {
-            "file_name": "stm32f103c8_cubemx_ucos-ii.ept",
-            "display_name": "STM32F103C8 Blink Demo (uCOS-II, STM32CubeMX, ARMCC)",
-            "category": [
-                "MCU/ST/STM32/STM32F1",
-                "RTOS/uCOS-II"
-            ],
-            "version": "1.3",
+            "version": "1.5",
             "author": "github0null"
         },
         {
