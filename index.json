@@ -874,6 +874,15 @@
             "author": "yunline"
         },
         {
+            "file_name": "ch32l103_template.ept",
+            "display_name": "CH32L103 (GCC Toolchain)",
+            "category": [
+                "MCU/WCH/RISC-V"
+            ],
+            "version": "1.0",
+            "author": "yunline"
+        },
+        {
             "file_name": "CH32V103_demo.ept",
             "display_name": "ch32v103 demo (GCC Toolchain)",
             "category": [
